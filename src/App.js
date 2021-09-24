@@ -6,7 +6,10 @@ import Home from './components/Home';
 import AddNote from './components/AddNote';
 import MyNotes from './components/MyNotes';
 import NoteState from './context/Notes/NoteState';
-function App() {
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+
+const App = () => {
   return (
     <>
       <NoteState>
@@ -25,6 +28,12 @@ function App() {
               </Route>
               <Route exact path="/mynotes">
                 <MyNotes />
+              </Route>
+              <Route exact path="/login">
+                <Login />
+              </Route>
+              <Route exact path="/signup">
+                <SignUp />
               </Route>
             </Switch>
           </div>
