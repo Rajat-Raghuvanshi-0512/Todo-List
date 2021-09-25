@@ -3,7 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import Alert from './Alert';
 
 export default function Navbar() {
+
     let location = useLocation();
+
     const onClick = () => {
         localStorage.removeItem('token');
         Alert("Success", "Logged out successfully")
