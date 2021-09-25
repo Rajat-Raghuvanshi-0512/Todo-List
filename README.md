@@ -8,7 +8,9 @@ paste the following lines into config.env file
 # Don't forget to replace username and passward with your username and password
 
 PORT=8000
+
 DATABASE=mongodb+srv://username:password@clustor0-jtpxd.mongodb.net/admin
+
 SECRET_KEY=TypeAnything
 
 # Installing Dependencies
